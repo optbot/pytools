@@ -13,7 +13,7 @@
     "url": "git://github.com/optbot/template.git"
   },
   "config": {
-      "path": "/var/local/.virtualenvs"
+    "path": "/var/local/.virtualenvs"
   },
   "keywords": [
     "pytools",
