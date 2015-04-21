@@ -12,8 +12,11 @@
     "type": "git",
     "url": "git://github.com/optbot/template.git"
   },
+  "config": {
+      "path": "/var/local/.virtualenvs"
+  },
   "keywords": [
-    "template",
+    "pytools",
     "optbot"
   ],
   "author": "Marshall Farrier",
@@ -24,7 +27,7 @@
     "lib/"
   ],
   "dependencies": {
-    "konphyg": "~1.4.0"
+    "nconf": "~0.7.1"
   },
   "devDependencies": {
     "chai": "~2.2.0",
