@@ -1,7 +1,7 @@
 {
   "name": "@optbot/pytools",
   "version": "0.0.0",
-  "description": "Template for starting a new package",
+  "description": "Install optbot Python version and management tools",
   "main": "lib/start",
   "scripts": {
     "start": "node lib/start.js",
@@ -10,7 +10,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/optbot/template.git"
+    "url": "git://github.com/optbot/pytools.git"
   },
   "config": {
     "python": {
