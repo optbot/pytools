@@ -1,6 +1,6 @@
 pytools
 ===
-Install Python 2.7.8 and Python virtual environments.
+Install Python 2.7 and Python virtual environments.
 
 Usage
 ---
@@ -24,17 +24,34 @@ Usage
        
 ### Details
 
+#### Dependent services
 Dependent services can install `pytools` with:
 
-    require('pytools').install();
+    var pytools = require('pytools');
+    pytools();
+
+or simply (note the parentheses at the end!):
+
+    require('pytools')();
+
+#### Python developer tools
+
+Run the following command as yourself. Do not run as `sudo`, and do
+not run in production environments (!!!!):
+
+    $ npm run dev-tool-setup
+    $ source ~/.bashrc
+
+This configures [virtualenvwrapper](http://docs.python-guide.org/en/latest/dev/virtualenvs/) and
+associated convenience tools for developer use.
 
 Testing
 ---
 ### Functionality
-    $ npm test
+Currently no tests
 
 ### Code conformity
-    $ jshint lib test
+    $ jshint lib
     $ jscs .
 
 Connects to
