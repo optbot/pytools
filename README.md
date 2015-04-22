@@ -24,6 +24,10 @@ Usage
        
 ### Details
 
+Dependent services can install `pytools` with:
+
+    require('pytools').install();
+
 Testing
 ---
 ### Functionality

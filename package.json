@@ -2,7 +2,7 @@
   "name": "@optbot/pytools",
   "version": "0.0.0",
   "description": "Template for starting a new package",
-  "main": "lib/template",
+  "main": "lib/start",
   "scripts": {
     "start": "node lib/start.js",
     "test": "./node_modules/.bin/mocha"
