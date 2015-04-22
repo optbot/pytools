@@ -13,7 +13,12 @@
     "url": "git://github.com/optbot/template.git"
   },
   "config": {
-    "path": "/var/local/.virtualenvs"
+    "python": {
+      "version": "2.7"
+    },
+    "virtualenvs": {
+      "path": "/var/local/.virtualenvs"
+    }
   },
   "keywords": [
     "pytools",
@@ -27,7 +32,7 @@
     "lib/"
   ],
   "dependencies": {
-    "nconf": "~0.7.1"
+    "shelljs": "~0.4.0"
   },
   "devDependencies": {
     "chai": "~2.2.0",

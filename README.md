@@ -9,7 +9,16 @@ Usage
     
         $ npm install
 
-2.  Run (perform the installation):
+2.  Configure the installation path for Python virtual environments
+    if you want to install them to a directory other than the default:
+
+        $ sudo npm config set @optbot/pytools:virtualenvs:path "/<path>" --global
+
+3.  Update [Apt](https://wiki.debian.org/Apt):
+
+        $ sudo apt-get update
+
+4.  Run (perform the installation):
 
         $ sudo npm start
        
