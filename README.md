@@ -41,7 +41,7 @@ Usage
 #### Dependent services
 Dependent services can install `pytools` with:
 
-    var pytools = require('pytools');
+    var pytools = require('@optbot/pytools');
     pytools.init();
 
 #### Python developer tools
