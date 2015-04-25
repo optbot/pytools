@@ -28,11 +28,7 @@ Usage
 Dependent services can install `pytools` with:
 
     var pytools = require('pytools');
-    pytools();
-
-or simply (note the parentheses at the end!):
-
-    require('pytools')();
+    pytools.init();
 
 #### Python developer tools
 
