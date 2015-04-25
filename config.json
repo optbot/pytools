@@ -3,6 +3,6 @@
     "version": "2.7"
   },
   "virtualenvs": {
-    "path": "/mnt/disk1/var/local/.virtualenvs"
+    "path": "/var/local/.virtualenvs"
   }
 }
