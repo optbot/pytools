@@ -1,6 +1,6 @@
 {
   "name": "@optbot/pytools",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Install optbot Python version and management tools",
   "main": "lib/pytools",
   "scripts": {
@@ -11,14 +11,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/optbot/pytools.git"
-  },
-  "config": {
-    "python": {
-      "version": "2.7"
-    },
-    "virtualenvs": {
-      "path": "/var/local/.virtualenvs"
-    }
   },
   "keywords": [
     "pytools",
@@ -32,6 +24,7 @@
     "lib/"
   ],
   "dependencies": {
+    "nconf": "~0.7.1",
     "shelljs": "~0.4.0"
   },
   "devDependencies": {

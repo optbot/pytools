@@ -9,10 +9,29 @@ Usage
     
         $ npm install
 
-2.  Configure the installation path for Python virtual environments
-    if you want to install them to a directory other than the default:
+2.  Configure.
+    1.  Go to the directory specified in your global `npm config` by
+        `quichean:nconf:path`
 
-        $ sudo npm config set @optbot/pytools:virtualenvs:path "/<path>" --global
+            $ pushd <quichean-conf-path>
+
+    1.  Create a directory `pytools` with appropriate permissions:
+
+            $ mkdir pytools
+            $ sudo chown root:sudo pytools
+            $ sudo chmod 774 pytools
+
+    1.  Copy the file `config.json` from the current directory to
+        `<quichean-conf-path>/pytools`: 
+
+            $ popd
+            $ cp config.json <quichean-conf-path>/pytools/
+
+    1.  Edit the file (do not delete keys!) and change permissions:
+
+            $ vim <quichean-conf-path>/pytools/config.json
+            $ sudo chown root:sudo <quichean-conf-path>/pytools/config.json
+            $ sudo chmod 664 <quichean-conf-path>/pytools/config.json
 
 3.  Update [Apt](https://wiki.debian.org/Apt):
 
