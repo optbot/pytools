@@ -11,7 +11,7 @@ Usage
 
 2.  Configure.
     1.  Go to the directory specified in your global `npm config` by
-        `quichean:nconf:path` and make a subdirectory `pytools:
+        `quichean:nconf:path` and make a subdirectory `pytools`:
 
             $ pushd <quichean-conf-path>
             $ mkdir pytools
