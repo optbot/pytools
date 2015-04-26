@@ -13,20 +13,21 @@ Usage
     1.  Go to the directory specified in your global `npm config` by
         `quichean:nconf:path` and make a subdirectory `pytools`:
 
-            $ pushd <quichean-conf-path>
+            $ export quichean_nconf_path="<path>"
+            $ pushd $quichean_nconf_path
             $ mkdir pytools
 
     1.  Copy the file `config.json` from the current directory to
-        `<quichean-conf-path>/pytools`: 
+        `$quichean_nconf_path/pytools`: 
 
             $ popd
-            $ cp config.json <quichean-conf-path>/pytools/
+            $ cp config.json ${quichean_nconf_path}/pytools/
 
     1.  Edit the file (do not delete keys!) and change permissions:
 
-            $ vim <quichean-conf-path>/pytools/config.json
-            $ sudo chown -R root:sudo <quichean-conf-path>/pytools
-            $ sudo chmod -R 774 <quichean-conf-path>/pytools
+            $ vim ${quichean_nconf_path}/pytools/config.json
+            $ sudo chown -R root:sudo ${quichean_nconf_path}/pytools
+            $ sudo chmod 755 ${quichean_nconf_path}/pytools
 
 3.  Update [Apt](https://wiki.debian.org/Apt):
 
