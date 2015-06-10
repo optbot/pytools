@@ -9,26 +9,6 @@ Usage
     
         $ npm install
 
-2.  Configure.
-    1.  Go to the directory specified in your global `npm config` by
-        `quichean:nconf:path` and make a subdirectory `pytools`:
-
-            $ export quichean_nconf_path="<path>"
-            $ pushd $quichean_nconf_path
-            $ mkdir pytools
-
-    1.  Copy the file `config.json` from the current directory to
-        `$quichean_nconf_path/pytools`: 
-
-            $ popd
-            $ cp config.json ${quichean_nconf_path}/pytools/
-
-    1.  Edit the file (do not delete keys!) and change permissions:
-
-            $ vim ${quichean_nconf_path}/pytools/config.json
-            $ sudo chown -R root:sudo ${quichean_nconf_path}/pytools
-            $ sudo chmod 755 ${quichean_nconf_path}/pytools
-
 3.  Update [Apt](https://wiki.debian.org/Apt):
 
         $ sudo apt-get update
@@ -40,10 +20,20 @@ Usage
 ### Details
 
 #### Dependent services
-Dependent services can install `pytools` with:
+Dependent services can install `pytools` and set up Python configurations with:
 
     var pytools = require('@optbot/pytools');
+    // installs correct Python version and sets up virtual environments
     pytools.init();
+    // copies configuration file with optbot Python configurations
+    pytools.configure();
+
+Called with no arguments, `init()` and `configure()` will do nothing if
+configurations already exist on the server. To update (and potentially change)
+the prior configuration, you can pass to `configure()` an object where `upgrade`
+is set to `true`:
+
+    pytools.configure({upgrade: true});
 
 #### Python developer tools
 
